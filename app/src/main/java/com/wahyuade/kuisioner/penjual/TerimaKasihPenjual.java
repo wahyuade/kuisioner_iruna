@@ -35,6 +35,7 @@ public class TerimaKasihPenjual extends Fragment {
                 }
             }
         };
+        thread.start();
         return terima_kasih;
     }
 
