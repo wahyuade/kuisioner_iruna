@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.wahyuade.kuisioner.service.DatabaseService;
+
 public class MainActivity extends Activity {
     LinearLayout pembeli, penjual;
     @Override
@@ -13,6 +15,10 @@ public class MainActivity extends Activity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        DatabaseService db = new DatabaseService(MainActivity.this);
+        db.unSetUser();
+        db.close();
 
         pembeli = (LinearLayout)findViewById(R.id.pembeli);
         penjual = (LinearLayout)findViewById(R.id.penjual);

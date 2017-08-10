@@ -50,9 +50,6 @@ public class FeeAgreementPenjual extends Fragment {
                     @Override
                     public void onResponse(Call<DefaultModel> call, Response<DefaultModel> response) {
                         progressDialog.dismiss();
-                        DatabaseService db = new DatabaseService(getActivity());
-                        db.unSetUser();
-                        db.close();
                         getFragmentManager().beginTransaction().replace(R.id.penjual_fragment, new DetailFeeFragment(), "TERIMA KASIH").commit();
                     }
 
@@ -73,9 +70,6 @@ public class FeeAgreementPenjual extends Fragment {
                     @Override
                     public void onResponse(Call<DefaultModel> call, Response<DefaultModel> response) {
                         progressDialog.dismiss();
-                        DatabaseService db = new DatabaseService(getActivity());
-                        db.unSetUser();
-                        db.close();
                         getFragmentManager().beginTransaction().replace(R.id.penjual_fragment, new TerimaKasihPenjual(), "TERIMA_KASIH").commit();
                     }
 
