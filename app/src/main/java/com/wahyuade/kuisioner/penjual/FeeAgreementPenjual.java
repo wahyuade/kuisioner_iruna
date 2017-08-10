@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.wahyuade.kuisioner.R;
 import com.wahyuade.kuisioner.model.DefaultModel;
+import com.wahyuade.kuisioner.penjual.waktu_penjualan.DetailFeeFragment;
 import com.wahyuade.kuisioner.service.ApiService;
 import com.wahyuade.kuisioner.service.DatabaseService;
 
@@ -52,7 +53,7 @@ public class FeeAgreementPenjual extends Fragment {
                         DatabaseService db = new DatabaseService(getActivity());
                         db.unSetUser();
                         db.close();
-                        getFragmentManager().beginTransaction().replace(R.id.pembeli_fragment, new TerimaKasihFragment(), "TERIMA KASIH").commit();
+                        getFragmentManager().beginTransaction().replace(R.id.penjual_fragment, new DetailFeeFragment(), "TERIMA KASIH").commit();
                     }
 
                     @Override
@@ -75,7 +76,7 @@ public class FeeAgreementPenjual extends Fragment {
                         DatabaseService db = new DatabaseService(getActivity());
                         db.unSetUser();
                         db.close();
-                        getFragmentManager().beginTransaction().replace(R.id.pembeli_fragment, new TerimaKasihFragment(), "TERIMA_KASIH").commit();
+                        getFragmentManager().beginTransaction().replace(R.id.penjual_fragment, new TerimaKasihPenjual(), "TERIMA_KASIH").commit();
                     }
 
                     @Override

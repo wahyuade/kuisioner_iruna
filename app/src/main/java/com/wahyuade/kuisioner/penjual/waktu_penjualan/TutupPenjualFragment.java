@@ -64,7 +64,7 @@ public class TutupPenjualFragment extends Fragment {
                             public void onResponse(Call<DefaultModel> call, Response<DefaultModel> response) {
                                 dialogInterface.dismiss();
                                 progressDialog.dismiss();
-                                getFragmentManager().beginTransaction().replace(R.id.pembeli_fragment, new MetodePembayaranPenjualFragment(), "METODE_PEMBAYARAN_PENJUAL").commit();
+                                getFragmentManager().beginTransaction().replace(R.id.penjual_fragment, new MetodePembayaranPenjualFragment(), "METODE_PEMBAYARAN_PENJUAL").commit();
                             }
 
                             @Override

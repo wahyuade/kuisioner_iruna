@@ -78,7 +78,7 @@ public class WaktuPenjualanFragment extends Fragment {
                         @Override
                         public void onResponse(Call<DefaultModel> call, Response<DefaultModel> response) {
                             progressDialog.dismiss();
-                            getFragmentManager().beginTransaction().replace(R.id.pembeli_fragment, new BukaPenjualFragment(), "BUKA_PENJUAL").commit();
+                            getFragmentManager().beginTransaction().replace(R.id.penjual_fragment, new BukaPenjualFragment(), "BUKA_PENJUAL").commit();
                         }
 
                         @Override

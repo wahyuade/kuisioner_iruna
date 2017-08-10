@@ -1,4 +1,4 @@
-package com.wahyuade.kuisioner.penjual;
+package com.wahyuade.kuisioner.penjual.waktu_penjualan;
 
 
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import com.wahyuade.kuisioner.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class TerimaKasihPenjual extends Fragment {
+public class DetailFeeFragment extends Fragment {
 
 
-    public TerimaKasihPenjual() {
+    public DetailFeeFragment() {
         // Required empty public constructor
     }
 
@@ -23,9 +23,9 @@ public class TerimaKasihPenjual extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View terima_kasih = inflater.inflate(R.layout.fragment_terima_kasih_penjual, container, false);
+        View detail_fee = inflater.inflate(R.layout.fragment_detail_fee, container, false);
 
-        return terima_kasih;
+        return detail_fee;
     }
 
 }

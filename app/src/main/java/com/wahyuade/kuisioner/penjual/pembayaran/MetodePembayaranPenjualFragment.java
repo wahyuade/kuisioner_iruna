@@ -128,7 +128,7 @@ public class MetodePembayaranPenjualFragment extends Fragment {
                                     public void onResponse(Call<DefaultModel> call, Response<DefaultModel> response) {
                                         progressDialog.dismiss();
                                         dialogInterface.dismiss();
-                                        getFragmentManager().beginTransaction().replace(R.id.pembeli_fragment, new FeeAgreementPenjual(), "FEE_AGREEMENT_PENJUAL").commit();
+                                        getFragmentManager().beginTransaction().replace(R.id.penjual_fragment, new FeeAgreementPenjual(), "FEE_AGREEMENT_PENJUAL").commit();
                                     }
 
                                     @Override
@@ -143,7 +143,7 @@ public class MetodePembayaranPenjualFragment extends Fragment {
                                     public void onResponse(Call<DefaultModel> call, Response<DefaultModel> response) {
                                         progressDialog.dismiss();
                                         dialogInterface.dismiss();
-                                        getFragmentManager().beginTransaction().replace(R.id.pembeli_fragment, new FeeAgreementPenjual(), "FEE_AGREEMENT_PENJUAL").commit();
+                                        getFragmentManager().beginTransaction().replace(R.id.penjual_fragment, new FeeAgreementPenjual(), "FEE_AGREEMENT_PENJUAL").commit();
                                     }
 
                                     @Override

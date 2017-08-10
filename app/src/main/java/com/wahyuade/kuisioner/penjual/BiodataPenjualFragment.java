@@ -63,7 +63,7 @@ public class BiodataPenjualFragment extends Fragment {
                             DatabaseService db = new DatabaseService(getActivity());
                             db.setUsersData(String.valueOf(email.getText()));
                             db.close();
-                            getFragmentManager().beginTransaction().replace(R.id.pembeli_fragment, new KebutuhanPenjualFragment(), "KEBUTUHAN").commit();
+                            getFragmentManager().beginTransaction().replace(R.id.penjual_fragment, new KebutuhanPenjualFragment(), "KEBUTUHAN").commit();
                         }
 
                         @Override
