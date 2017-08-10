@@ -14,7 +14,7 @@ import retrofit2.http.POST;
  */
 
 public class ApiService {
-        public static String BASE_URL = "http://192.168.0.16:3000";
+        public static String BASE_URL = "http://iruna.wahyuade.com";
 
         public static PostService service_post = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
