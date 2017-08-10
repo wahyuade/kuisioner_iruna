@@ -2,12 +2,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2196F3"
     tools:context="com.wahyuade.kuisioner.penjual.TerimaKasihPenjual">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Terima kasih /n Atas " />
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textSize="30dp"
+        android:text="Terima kasih waktu dan kesempatan Anda dalam mengisi Kuisioner kami" />
 
 </RelativeLayout>

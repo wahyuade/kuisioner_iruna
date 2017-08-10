@@ -14,4 +14,7 @@ Saudara/i lebih laku dengan pasar lebih luas tersebut?</string>
 penjual lebih laku dan mempunyai lingkup pasar yang lebih besar. Target pasar utama adalah
 Perumahan Batan Serpong namun tidak menutup kemungkinan untuk memenuhi kebutuhan warga di
 luar Batan Serpong. Sebagai informasi, selama mengisi kuesioner ini, UKM/ penjual tidak dipungut biaya sedikitpun.</string>
+    <string name="detail_fee">Bagaimana skema fee tambahan yang akan digunakan :</string>
+    <string name="pilihan_1">Harga sekarang tetap dan memberikan fee % dari harga sekarang tersebut</string>
+    <string name="pilihan_2">Harga sekarang dinaikkan(mark-up) sebesar fee % yang akan diberikan</string>
 </resources>

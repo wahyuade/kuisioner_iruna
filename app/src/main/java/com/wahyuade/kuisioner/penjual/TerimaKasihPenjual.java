@@ -24,7 +24,17 @@ public class TerimaKasihPenjual extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View terima_kasih = inflater.inflate(R.layout.fragment_terima_kasih_penjual, container, false);
-
+        Thread thread = new Thread(){
+            public void run() {
+                try{
+                    sleep(3000);
+                }catch (InterruptedException e) {
+                    e.printStackTrace();
+                }finally{
+                    getActivity().finish();
+                }
+            }
+        };
         return terima_kasih;
     }
 

@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 import com.wahyuade.kuisioner.R;
 import com.wahyuade.kuisioner.model.DefaultModel;
-import com.wahyuade.kuisioner.penjual.waktu_penjualan.DetailFeeFragment;
 import com.wahyuade.kuisioner.service.ApiService;
 import com.wahyuade.kuisioner.service.DatabaseService;
 

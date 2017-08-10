@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 
+import com.wahyuade.kuisioner.penjual.DetailFeeFragment;
 import com.wahyuade.kuisioner.penjual.IntroPenjualFragment;
 
 

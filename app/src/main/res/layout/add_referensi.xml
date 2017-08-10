@@ -104,7 +104,7 @@
                     android:id="@+id/tambah_referensi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:theme="@style/ButtonBiru"
+                    android:theme="@style/ButtonMerah"
                     android:textColor="#fff"
                     android:text="TAMBAH"/>
             </LinearLayout>
