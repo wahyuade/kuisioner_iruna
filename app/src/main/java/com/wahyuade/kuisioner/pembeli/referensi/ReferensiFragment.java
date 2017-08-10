@@ -81,6 +81,13 @@ public class ReferensiFragment extends Fragment {
                 final EditText alamat = (EditText)new_referensi.findViewById(R.id.alamat);
                 final EditText produk = (EditText)new_referensi.findViewById(R.id.produk);
                 Button tambah_referensi = (Button)new_referensi.findViewById(R.id.tambah_referensi);
+                Button batal = (Button)new_referensi.findViewById(R.id.batal);
+                batal.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        new_referensi.dismiss();
+                    }
+                });
 
                 tambah_referensi.setOnClickListener(new View.OnClickListener() {
                     @Override
