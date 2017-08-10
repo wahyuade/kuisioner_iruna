@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Kuisioner</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="intro_pembeli">Kuesioner ini bertujuan memberikan gambaran dan membantu agar Saudara/i mendapatkan produk
+sesuai yang dibutuhkan/ diinginkan langsung diantar ke rumah.
+Sebagai informasi, selama mengisi kuesioner ini, Saudara/i tidak dipungut biaya sedikitpun.</string>
+    <string name="fee_agreement">Apakah bersedia untuk memberikan fee tambahan bagi pihak yang membantu produk
+Saudara/i diantar ke rumah?</string>
+    <string name="fee_agreement_penjual">Apakah bersedia untuk memberikan fee tambahan bagi pihak yang membantu produk
+Saudara/i lebih laku dengan pasar lebih luas tersebut?</string>
+    <string name="intro_penjual">Kuesioner ini bertujuan memberikan gambaran dan membantu agar produk Saudara/i sebagai UKM/
+penjual lebih laku dan mempunyai lingkup pasar yang lebih besar. Target pasar utama adalah
+Perumahan Batan Serpong namun tidak menutup kemungkinan untuk memenuhi kebutuhan warga di
+luar Batan Serpong. Sebagai informasi, selama mengisi kuesioner ini, UKM/ penjual tidak dipungut biaya sedikitpun.</string>
+</resources>
