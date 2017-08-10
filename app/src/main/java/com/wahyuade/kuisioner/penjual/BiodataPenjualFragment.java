@@ -55,23 +55,27 @@ public class BiodataPenjualFragment extends Fragment {
                     Toast.makeText(getActivity(), "Mohon lengkapi terlebih dahulu isian formulir kuisioner Anda", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    progressDialog.show();
-                    ApiService.service_post.postBiodataPenjual(String.valueOf(nama.getText()),String.valueOf(alamat.getText()),String.valueOf(no_telp.getText()),String.valueOf(email.getText())).enqueue(new Callback<DefaultModel>() {
-                        @Override
-                        public void onResponse(Call<DefaultModel> call, Response<DefaultModel> response) {
-                            progressDialog.dismiss();
-                            DatabaseService db = new DatabaseService(getActivity());
-                            db.setUsersData(String.valueOf(email.getText()));
-                            db.close();
-                            getFragmentManager().beginTransaction().replace(R.id.penjual_fragment, new KebutuhanPenjualFragment(), "KEBUTUHAN").commit();
-                        }
+                    if(String.valueOf(email.getText()).contains(" ") || !String.valueOf(email.getText()).contains("@")){
+                        Toast.makeText(getActivity(), "Mohon maaf email yang anda masukkan tidak valid", Toast.LENGTH_SHORT).show();
+                    }else{
+                        progressDialog.show();
+                        ApiService.service_post.postBiodataPenjual(String.valueOf(nama.getText()),String.valueOf(alamat.getText()),String.valueOf(no_telp.getText()),String.valueOf(email.getText())).enqueue(new Callback<DefaultModel>() {
+                            @Override
+                            public void onResponse(Call<DefaultModel> call, Response<DefaultModel> response) {
+                                progressDialog.dismiss();
+                                DatabaseService db = new DatabaseService(getActivity());
+                                db.setUsersData(String.valueOf(email.getText()));
+                                db.close();
+                                getFragmentManager().beginTransaction().replace(R.id.penjual_fragment, new KebutuhanPenjualFragment(), "KEBUTUHAN").commit();
+                            }
 
-                        @Override
-                        public void onFailure(Call<DefaultModel> call, Throwable t) {
-                            Toast.makeText(getActivity(), "Mohon maaf terjadi gangguan jaringan", Toast.LENGTH_SHORT).show();
-                            progressDialog.dismiss();
-                        }
-                    });
+                            @Override
+                            public void onFailure(Call<DefaultModel> call, Throwable t) {
+                                Toast.makeText(getActivity(), "Mohon maaf terjadi gangguan jaringan", Toast.LENGTH_SHORT).show();
+                                progressDialog.dismiss();
+                            }
+                        });
+                    }
                 }
             }
         });
