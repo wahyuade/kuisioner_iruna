@@ -37,10 +37,22 @@
                     android:layout_height="wrap_content">
 
                     <EditText
+                        android:id="@+id/nama_ukm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nama Toko / UKM (Opsional)"
+                        android:inputType="text" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
                         android:id="@+id/nama"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Nama"
+                        android:hint="Nama Pemilik"
                         android:inputType="text" />
 
                 </android.support.design.widget.TextInputLayout>

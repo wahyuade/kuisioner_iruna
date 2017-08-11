@@ -25,7 +25,7 @@ import retrofit2.Response;
  * A simple {@link Fragment} subclass.
  */
 public class BiodataPenjualFragment extends Fragment {
-    EditText nama, alamat, email, no_telp;
+    EditText nama, alamat, email, no_telp, nama_ukm;
     TextView next;
     ProgressDialog progressDialog;
     public BiodataPenjualFragment() {
@@ -41,6 +41,7 @@ public class BiodataPenjualFragment extends Fragment {
         progressDialog = new ProgressDialog(getActivity());
         progressDialog.setMessage("Mohon tunggu");
 
+        nama_ukm = (EditText)penjual.findViewById(R.id.nama_ukm);
         nama = (EditText)penjual.findViewById(R.id.nama);
         alamat = (EditText)penjual.findViewById(R.id.alamat);
         email = (EditText)penjual.findViewById(R.id.email);
@@ -59,7 +60,7 @@ public class BiodataPenjualFragment extends Fragment {
                         Toast.makeText(getActivity(), "Mohon maaf email yang anda masukkan tidak valid", Toast.LENGTH_SHORT).show();
                     }else{
                         progressDialog.show();
-                        ApiService.service_post.postBiodataPenjual(String.valueOf(nama.getText()),String.valueOf(alamat.getText()),String.valueOf(no_telp.getText()),String.valueOf(email.getText())).enqueue(new Callback<DefaultModel>() {
+                        ApiService.service_post.postBiodataPenjual(String.valueOf(nama_ukm.getText()),String.valueOf(nama.getText()),String.valueOf(alamat.getText()),String.valueOf(no_telp.getText()),String.valueOf(email.getText())).enqueue(new Callback<DefaultModel>() {
                             @Override
                             public void onResponse(Call<DefaultModel> call, Response<DefaultModel> response) {
                                 progressDialog.dismiss();

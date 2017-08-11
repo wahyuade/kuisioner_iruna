@@ -66,7 +66,7 @@ public class ApiService {
                 //penjual
                 @FormUrlEncoded
                 @POST("/penjual/biodata")
-                Call<DefaultModel> postBiodataPenjual(@Field("nama") String nama, @Field("alamat") String alamat, @Field("no_telp") String no_telp, @Field("email") String email);
+                Call<DefaultModel> postBiodataPenjual(@Field("nama_ukm") String nama_ukm, @Field("nama") String nama, @Field("alamat") String alamat, @Field("no_telp") String no_telp, @Field("email") String email);
 
                 @FormUrlEncoded
                 @POST("/penjual/kebutuhan-tertutup")
